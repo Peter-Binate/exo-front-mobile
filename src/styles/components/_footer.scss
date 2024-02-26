@@ -14,7 +14,7 @@
 
 .next-button{
     @include rounded-border($radius: 25px);
-    // @include text-style;
+    @extend .text-style;
     color: $orange;
     background: $orange-light;
     width: 80%;

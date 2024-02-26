@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FaRegUser } from "react-icons/fa6";
 import {listNames} from "../../datas/datas.js";
 import { listTitle } from "../../datas/titleTab.js";
@@ -8,8 +8,7 @@ import Menu from "../menu/menu.jsx";
 import Footer from "../../layouts/Footer/Footer.jsx";
 
 
-const MainContent = () => {
-
+const MainContent = ({ toggleView }) => {
 
     const titleRecap = listTitle()[0];
     const titleButton = listTitleButton()[0];
@@ -39,15 +38,30 @@ const MainContent = () => {
     </li>
     );
 
+    // Fonction pour vérifier si au moins un élément a été coché
+    const handleNextButtonClick = () => {
+        const isAtLeastOneChecked = Object.values(checkedItems).some(item => item);
+        if (isAtLeastOneChecked) {
+        toggleView(); // Appeler la fonction pour basculer vers le ServiceRecap
+        } else {
+        // Gérer le cas où aucun élément n'est coché
+        console.log('Aucun élément coché');
+        }
+    };
+
+
     return (
         <>
-        <Header title={titleRecap}/>
-        <Menu />
-            <ul>{nameItems}</ul>
-            <Footer title={titleButton}></Footer>
+         <div className="header-in-scroll">
+            <Header title={titleRecap}/>
+            <Menu />
+        </div>
+           
             <ul className="main-section flex-center">
                 {nameItems}
             </ul>
+
+            <Footer title={titleButton} onNextButtonClick={handleNextButtonClick} />
         </>
     );
 }
