@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MainContent from './components/main-content/MainContent';
 import ServiceRecap from './components/services/services-recap';
+// import Pourboire from './components/Pourboire/Pourboire';
 import './styles/main.scss';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
     <>
       {/* Utilisez une condition pour afficher le composant approprié */}
       {showMainContent ? <MainContent toggleView={toggleView} /> : <ServiceRecap toggleView={toggleView} />}
-       {/* <ServiceRecap /> */}
+      {/* <Pourboire /> */}
     </>
   );
 }
