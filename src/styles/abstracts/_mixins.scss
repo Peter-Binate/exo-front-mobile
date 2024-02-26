@@ -1,6 +1,5 @@
 @mixin section-width ($width: 100%) {
     width: $width;
-    border: 1px solid black;
 }
 
 @mixin flex-position($justify-content) {
@@ -10,4 +9,8 @@
 
 @mixin margin($margin){
     margin: $margin;
+}
+
+@mixin z-index($z-index: 0){
+    z-index: $z-index;
 }

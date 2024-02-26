@@ -1,4 +1,5 @@
 import React from 'react'
+import { BiMenuAltRight } from "react-icons/bi";
 import { DateTime } from 'luxon'
 
 const Header = () => {
@@ -14,7 +15,9 @@ const Header = () => {
           <p className='date'>{formattedDate}</p>
           <div className="header-main-block">
             <h1>Qui travaille aujourd'hui ?</h1>
-            <p className='burger-icon'>B</p>
+            <p className='burger-icon-container'>
+              <BiMenuAltRight className='burger-icon'/>
+            </p>
           </div>
         </div>
     </>
