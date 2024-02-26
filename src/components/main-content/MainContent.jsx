@@ -43,7 +43,9 @@ const MainContent = ({ toggleView }) => {
 
     // Fonction pour vérifier si au moins un élément a été coché
     const handleNextButtonClick = () => {
+        
         const isAtLeastOneChecked = Object.values(checkedItems).some(item => item);
+        
         if (isAtLeastOneChecked) {
         toggleView(); // Appeler la fonction pour basculer vers le ServiceRecap
         } else {
