@@ -28,14 +28,48 @@ ou des fonctionnalités spécifiques.*/
     text-align: center;
   }
   
+  .flex-start {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  .pourboire-input-container{
+    @extend .flex-start;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 90%;
+
+    label {
+      font-size: 17px;
+      font-weight: 700;
+      color: #FF6B40;
+    }
+
+    input{
+      font-family: Arial, sans-serif;
+      background-color: #F4F4F4;
+      border-radius: 4px;
+      width: 95%;
+      height: 50px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+    }
+
+    input::placeholder {
+      color: #C9C9C9;
+      font-size:  17px;
+    }
+  }
   
   // Mixin pour la bordure arrondie
-  @mixin rounded-border($radius: 4px) {
+  @mixin rounded-border($radius: 25px) {
     border-radius: $radius;
   }
   
