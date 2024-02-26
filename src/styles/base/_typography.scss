@@ -1,0 +1,46 @@
+// Définition des tailles de police par défaut
+$base-font-size: 16px;
+$small-font-size: 14px;
+$large-font-size: 18px;
+
+// Définition des styles de police par défaut
+$base-font-family: 'Arial', sans-serif;
+
+// Styles de texte pour différentes sections
+body {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: 1.5;
+  color: #333; // Couleur de texte par défaut
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-font-family;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.uppercase-text{
+  text-transform: uppercase;
+}
+// Ajoutez d'autres styles de texte selon les besoins du projet

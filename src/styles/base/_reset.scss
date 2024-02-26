@@ -1,0 +1,40 @@
+  // Réinitialisation des styles spécifiques aux navigateurs
+
+// Réinitialisation des marges et paddings à zéro pour tous les éléments
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; // Inclure la bordure dans la taille totale de l'élément
+  }
+  
+  // Normalisation de la police pour une cohérence de base
+  body {
+    font-family: sans-serif;
+  }
+  
+  // Suppression des styles de liste par défaut
+  ul, ol {
+    list-style: none;
+  }
+  
+  // Réinitialisation des styles des liens
+  a {
+    text-decoration: none;
+    color: inherit; // Hériter de la couleur du texte parent
+  }
+  
+  // Gestion des styles des formulaires
+  input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  // Réinitialisation des styles des éléments de formulaire pour une cohérence de base
+  button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+  }
+  
+
+  
