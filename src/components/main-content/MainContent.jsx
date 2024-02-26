@@ -10,15 +10,12 @@ import Footer from "../../layouts/Footer/Footer.jsx";
 
 const MainContent = ({ toggleView }) => {
 
-    // Titre de la page
     const titleRecap = listTitle()[0];
-    // Titre du bouton
     const titleButton = listTitleButton()[0];
 
-    // Variable d'état des checkbox
+    // Permet de vérifier si les inputs ont été cochés
     const [checkedItems, setCheckedItems] = useState({});
     
-    // Permet de vérifier si les inputs ont été cochés
     const handleCheckboxChange = (index) => {
         setCheckedItems((prev) => ({
           ...prev,
@@ -26,7 +23,7 @@ const MainContent = ({ toggleView }) => {
         }));
     };
 
-  // On génère tous les inputs  
+
   const nameItems = listNames().map((name, index) =>
     <li key={index} className={`input-checkbox-container ${checkedItems[index] ? 'checked' : ''}`}>
         <div className="icon-container text-center flex-center">
@@ -43,9 +40,7 @@ const MainContent = ({ toggleView }) => {
 
     // Fonction pour vérifier si au moins un élément a été coché
     const handleNextButtonClick = () => {
-        
         const isAtLeastOneChecked = Object.values(checkedItems).some(item => item);
-        
         if (isAtLeastOneChecked) {
         toggleView(); // Appeler la fonction pour basculer vers le ServiceRecap
         } else {
