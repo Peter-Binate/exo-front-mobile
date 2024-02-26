@@ -8,6 +8,7 @@ import Menu from "../menu/menu.jsx";
 import Footer from "../../layouts/Footer/Footer.jsx";
 
 
+
 const MainContent = ({ toggleView }) => {
 
     // Titre de la page
@@ -65,6 +66,7 @@ const MainContent = ({ toggleView }) => {
             </ul>
 
             <Footer title={titleButton} onNextButtonClick={handleNextButtonClick} />
+
         </>
     );
 }
