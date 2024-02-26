@@ -1,9 +1,32 @@
-@import '../../styles/abstracts/mixins'; 
+@import '../../styles/abstracts/variables'; 
+@import '../../styles/abstracts/mixins';
+@import '../base/utilities'; 
 
 .header{
     @include section-width;
-    border: 1px solid black;
-//     @include flex-position($justify-content: space-around);
-//     padding-top: 22px;
-//     border: 1px solid black;
+    padding-left: 18px;
+}
+
+h1{
+    width: 70%;
+    font-weight: 700;
+}
+
+.date{
+    color: $gray-text-color;
+    font-weight: 500;
+    font-size: 17px;
+    margin: 75px 0 0;
+    text-transform: capitalize;
+}
+
+.header-main-block{
+    @include flex-position($justify-content: space-between);
+}
+
+.burger-icon-container{
+     margin-right: 18px;
+}
+.burger-icon{
+     font-size: 44px;
 }

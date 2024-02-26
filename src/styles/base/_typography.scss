@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 34px;
 }
 
 h2 {
@@ -42,5 +42,11 @@ p {
 
 .uppercase-text{
   text-transform: uppercase;
+}
+
+.text-style{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $base-font-family;
 }
 // Ajoutez d'autres styles de texte selon les besoins du projet
