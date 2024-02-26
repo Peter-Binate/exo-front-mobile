@@ -16,8 +16,6 @@ function App() {
     <>
       {/* Utilisez une condition pour afficher le composant approprié */}
       {showMainContent ? <MainContent toggleView={toggleView} /> : <ServiceRecap toggleView={toggleView} />}
-
-      <MainContent />
        {/* <ServiceRecap /> */}
     </>
   );
