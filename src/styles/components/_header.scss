@@ -1,5 +1,6 @@
 @import '../../styles/abstracts/variables'; 
-@import '../../styles/abstracts/mixins'; 
+@import '../../styles/abstracts/mixins';
+@import '../base/utilities'; 
 
 .header{
     @include section-width;

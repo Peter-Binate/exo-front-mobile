@@ -1,0 +1,61 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/utilities';
+@import '../base/typography';
+
+.main-section{
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+ 
+.input-checkbox-container{
+    @include flex-position($justify-content: space-around);
+    z-index: 3;
+    width: 90%;
+    height: 76px;
+    margin-top: 10px;
+    border: 0.5px solid #B8B8B8;
+    border-radius: 5px;
+
+    &.checked {
+        border: 2px solid $orange;
+    }
+
+    input[type="checkbox"]:checked + .checkbox-container & {
+        border-color: $orange;
+    }
+}
+
+.icon-container{
+    margin-left: 10px;
+}
+
+.name-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: bottom;
+    align-items: center;
+}
+
+.checkbox-container {
+    @include section-width($width: 20%);
+    
+    /* Ajoutez ces styles pour ajuster la taille de l'input checkbox */
+    input[type="checkbox"] {
+      transform: scale(1.5); /* Ajustez la valeur pour changer la taille */
+      accent-color: $orange;
+    }
+    input[type="checkbox"]:checked {
+      color: $white-color !important;
+    }
+}
+
+.user-icon{
+    font-size: 48px;
+    background: $orange;
+    color: $white-color;
+    padding: 10px;
+    border-radius: 100%;
+}

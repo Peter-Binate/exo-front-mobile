@@ -6,12 +6,19 @@ ou des fonctionnalités spécifiques.*/
 // Classes utilitaires pour le positionnement
 .position-relative {
     position: relative;
-  }
+  }  
   
   .position-absolute {
     position: absolute;
   }
   
+  .header-in-scroll{
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: #fff;
+  }
+
   .position-fixed {
     position: fixed;
   }

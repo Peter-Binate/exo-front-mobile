@@ -9,8 +9,10 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Menus />
+      <div className="header-in-scroll">
+        <Header />
+        <Menus />
+      </div>
       <MainContent />
       <Footer />
     </>
