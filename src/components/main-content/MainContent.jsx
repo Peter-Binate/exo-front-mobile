@@ -8,6 +8,7 @@ import Menu from "../menu/menu.jsx";
 import Footer from "../../layouts/Footer/Footer.jsx";
 
 
+
 const MainContent = ({ toggleView }) => {
 
     const titleRecap = listTitle()[0];
@@ -62,6 +63,7 @@ const MainContent = ({ toggleView }) => {
             </ul>
 
             <Footer title={titleButton} onNextButtonClick={handleNextButtonClick} />
+
         </>
     );
 }

@@ -9,11 +9,9 @@
     text-align: center;
 }
 
-
-
-.container-button-service{
+.toggle_switch{
 flex-direction: column;
-
+margin-top: 20%;
 .buttonService{
     @include flex-position($justify-content: space-between);
     width: 137px;
@@ -25,11 +23,37 @@ flex-direction: column;
    
 
     .buttonStyle{
-        width: 51px;
-        height: 4vh;
-        font-size: 4vh; 
-        margin-left: 15px;
+        width: 37%;
+        height: 5.5vh;
+        margin-left: 6px;
+        margin-right: 5px;
+        padding: 5px;
+        color: black;
+        
+    }
+
+    .hoverClick{
+        border-radius: 50%;
+        background-color: white;
+        padding: 5px;
+        color: $orange;
     }
 }
 
+}
+
+.container-list{
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 29vh;
+    width: 43vh;
+}
+
+.container-list-name{
+    display: flex;
+    justify-content: space-around;
+    z-index: 3;
+    width: 90%;
+    height: 57px;
+    border-bottom: 0.5px solid #B8B8B8;
 }
