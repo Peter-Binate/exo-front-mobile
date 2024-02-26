@@ -1,0 +1,35 @@
+@import '../../styles/abstracts/variables'; 
+@import '../../styles/abstracts/mixins';
+
+.titleRecap{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: $orange;
+    text-align: center;
+}
+
+
+
+.container-button-service{
+flex-direction: column;
+
+.buttonService{
+    @include flex-position($justify-content: space-between);
+    width: 137px;
+    height: 56px;
+    border-radius: 35.5px;
+    background-color: $orange-light;
+    color: white;
+    cursor: pointer;
+   
+
+    .buttonStyle{
+        width: 51px;
+        height: 4vh;
+        font-size: 4vh; 
+        margin-left: 15px;
+    }
+}
+
+}
