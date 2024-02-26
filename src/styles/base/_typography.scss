@@ -43,4 +43,10 @@ p {
 .uppercase-text{
   text-transform: uppercase;
 }
+
+.text-style{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: $base-font-family;
+}
 // Ajoutez d'autres styles de texte selon les besoins du projet

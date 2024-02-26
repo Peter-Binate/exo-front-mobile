@@ -29,7 +29,6 @@ button, input, optgroup, select, textarea {
   color: inherit;
 }
 
-
 button {
   all: initial;
 }
@@ -96,9 +95,25 @@ ou des fonctionnalités spécifiques.*/
   align-items: center;
 }
 
+.menu {
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+.menu ul li {
+  border-radius: 8px;
+  background-color: #E9E9E9;
+  width: 84px;
+  text-align: center;
+  margin: 1vh;
+}
+
 .header {
   width: 100%;
-/*# sourceMappingURL=main.css.map */
   padding-left: 18px;
 }
 
