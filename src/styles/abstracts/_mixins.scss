@@ -1,6 +1,5 @@
 @mixin section-width ($width: 100%) {
     width: $width;
-    border: 1px solid black;
 }
 
 @mixin flex-position($justify-content) {
@@ -16,4 +15,7 @@
     @media screen and (max-width: 768px){
         @content;
     }
+
+@mixin z-index($z-index: 0){
+    z-index: $z-index;
 }

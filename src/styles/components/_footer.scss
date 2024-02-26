@@ -1,0 +1,27 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/utilities';
+@import '../base/typography';
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    @include section-width;
+    @include z-index($z-index: 1);
+}
+
+.next-button{
+    @include rounded-border($radius: 25px);
+    font-size: 20px;
+    font-family: $base-font-family;
+    font-weight: 700;
+    color: $orange;
+    background: rgba(255, 107, 64, 0.21);
+    width: 80%;
+    padding: 10px 0;
+}
+
+.arrow-icon{
+    margin-left: 10px;
+}
