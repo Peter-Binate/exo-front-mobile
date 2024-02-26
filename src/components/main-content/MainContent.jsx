@@ -10,7 +10,6 @@ import Footer from "../../layouts/Footer/Footer.jsx";
 
 const MainContent = () => {
 
-
     const titleRecap = listTitle()[0];
     const titleButton = listTitleButton()[0];
 
@@ -41,13 +40,16 @@ const MainContent = () => {
 
     return (
         <>
-        <Header title={titleRecap}/>
-        <Menu />
-            <ul>{nameItems}</ul>
-            <Footer title={titleButton}></Footer>
+         <div className="header-in-scroll">
+            <Header title={titleRecap}/>
+            <Menu />
+        </div>
+           
             <ul className="main-section flex-center">
                 {nameItems}
             </ul>
+
+             <Footer title={titleButton}></Footer>
         </>
     );
 }

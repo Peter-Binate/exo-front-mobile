@@ -15,8 +15,10 @@ const HeaderRecap = () => {
 
   return (
     <>
+     <div className="header-in-scroll">
     <Header title={titleRecap}/>
     <Menus />
+    </div>
         <p className='titleRecap'>Employés selectionnés</p>
 
         <div className='container-button-service flex-center'>

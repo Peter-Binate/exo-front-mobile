@@ -8,7 +8,6 @@ function App() {
 
   return (
     <>
-       <div className="header-in-scroll"></div>
       <MainContent />
        {/* <ServiceRecap /> */}
     </>
