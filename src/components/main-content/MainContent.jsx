@@ -10,12 +10,15 @@ import Footer from "../../layouts/Footer/Footer.jsx";
 
 const MainContent = ({ toggleView }) => {
 
+    // Titre de la page
     const titleRecap = listTitle()[0];
+    // Titre du bouton
     const titleButton = listTitleButton()[0];
 
-    // Permet de vérifier si les inputs ont été cochés
+    // Variable d'état des checkbox
     const [checkedItems, setCheckedItems] = useState({});
     
+    // Permet de vérifier si les inputs ont été cochés
     const handleCheckboxChange = (index) => {
         setCheckedItems((prev) => ({
           ...prev,
@@ -23,7 +26,7 @@ const MainContent = ({ toggleView }) => {
         }));
     };
 
-
+  // On génère tous les inputs  
   const nameItems = listNames().map((name, index) =>
     <li key={index} className={`input-checkbox-container ${checkedItems[index] ? 'checked' : ''}`}>
         <div className="icon-container text-center flex-center">

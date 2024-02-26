@@ -4,7 +4,7 @@ import ServiceRecap from './components/services/services-recap';
 import './styles/main.scss';
 
 function App() {
-  // Ajoutez un état pour suivre l'état actuel (MainContent ou ServiceRecap)
+  // On ajoute un état pour suivre l'état actuel (MainContent ou ServiceRecap)
   const [showMainContent, setShowMainContent] = useState(true);
 
   // Fonction pour basculer entre MainContent et ServiceRecap

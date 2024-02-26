@@ -8,14 +8,15 @@
         display: flex;
         justify-content: center;
 
-    li {
-    border-radius: 8px;
-    background-color: $gray-color;
-    width: 84px;
-    text-align: center;
-    margin: 1vh;
-    }
-
+        li {
+            width: 84px;
+            text-align: center;
+            margin: 1vh;
+        }
+        li:hover{
+            background-color: $gray-color;
+            border-radius: 8px;
+        }
     }
 
 }
