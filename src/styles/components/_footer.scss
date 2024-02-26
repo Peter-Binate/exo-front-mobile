@@ -9,7 +9,7 @@
     height: 101px;
     background-color: $white-color;
     @include section-width;
-    @include z-index($z-index: 999);
+    @include z-index($z-index: 998);
 }
 
 .next-button{
