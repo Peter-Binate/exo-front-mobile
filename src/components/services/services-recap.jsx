@@ -29,7 +29,7 @@ const HeaderRecap = () => {
             <div className='buttonStyle'><FaRegMoon /></div>
 
             </button>
-            <p className='titleRecap'>midi</p>
+            <p className='titleRecap' style={{color:"black"}}>midi</p>
         </div>
         <Footer title={titleButton}/>
     </>

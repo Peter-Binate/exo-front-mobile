@@ -8,14 +8,18 @@ import Menu from "../menu/menu.jsx";
 import Footer from "../../layouts/Footer/Footer.jsx";
 
 
-const MainContent = () => {
 
+const MainContent = ({ toggleView }) => {
+
+    // Titre de la page
     const titleRecap = listTitle()[0];
+    // Titre du bouton
     const titleButton = listTitleButton()[0];
 
-    // Permet de vérifier si les inputs ont été cochés
+    // Variable d'état des checkbox
     const [checkedItems, setCheckedItems] = useState({});
     
+    // Permet de vérifier si les inputs ont été cochés
     const handleCheckboxChange = (index) => {
         setCheckedItems((prev) => ({
           ...prev,
@@ -23,7 +27,7 @@ const MainContent = () => {
         }));
     };
 
-
+  // On génère tous les inputs  
   const nameItems = listNames().map((name, index) =>
     <li key={index} className={`input-checkbox-container ${checkedItems[index] ? 'checked' : ''}`}>
         <div className="icon-container text-center flex-center">
@@ -38,6 +42,18 @@ const MainContent = () => {
     </li>
     );
 
+    // Fonction pour vérifier si au moins un élément a été coché
+    const handleNextButtonClick = () => {
+        const isAtLeastOneChecked = Object.values(checkedItems).some(item => item);
+        if (isAtLeastOneChecked) {
+        toggleView(); // Appeler la fonction pour basculer vers le ServiceRecap
+        } else {
+        // Gérer le cas où aucun élément n'est coché
+        console.log('Aucun élément coché');
+        }
+    };
+
+
     return (
         <>
          <div className="header-in-scroll">
@@ -49,7 +65,8 @@ const MainContent = () => {
                 {nameItems}
             </ul>
 
-             <Footer title={titleButton}></Footer>
+            <Footer title={titleButton} onNextButtonClick={handleNextButtonClick} />
+
         </>
     );
 }

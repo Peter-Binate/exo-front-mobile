@@ -4,9 +4,9 @@ const Menu = () => {
     return (
         <div className="menu flex-center">
             <ul >
-                <li>salle</li>
-                <li>cuisine</li>
-                <li>service</li>
+                <li className="category-name">salle</li>
+                <li className="category-name">cuisine</li>
+                <li className="category-name">service</li>
             </ul>
         </div>
     );
