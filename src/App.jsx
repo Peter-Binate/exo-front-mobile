@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import Header from '../src/layouts/Header/Header'
 
 
 function App() {
 
   return (
     <>
-      <h1>Exo mobile</h1>
+      <Header />
     </>
   )
 }
