@@ -11,6 +11,11 @@
     margin: $margin;
 }
 
+@mixin screensize-mobile(){
+    @media screen and (max-width: 768px){
+        @content;
+    }
+
 @mixin z-index($z-index: 0){
     z-index: $z-index;
 }

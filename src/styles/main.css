@@ -29,6 +29,7 @@ button, input, optgroup, select, textarea {
   color: inherit;
 }
 
+
 button {
   all: initial;
 }
@@ -97,6 +98,7 @@ ou des fonctionnalités spécifiques.*/
 
 .header {
   width: 100%;
+/*# sourceMappingURL=main.css.map */
   padding-left: 18px;
 }
 
