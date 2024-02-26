@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FaRegUser } from "react-icons/fa6";
 import {listNames} from "../../datas/datas.js";
 import { listTitle } from "../../datas/titleTab.js";
