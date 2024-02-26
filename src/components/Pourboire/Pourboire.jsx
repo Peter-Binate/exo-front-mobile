@@ -9,7 +9,18 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Pourboire = () => {
   // Notification ajout de pourboire
-  const notify = () => toast("Le pourboire à bien été ajouté !");
+  const notify = () => {
+    toast.success('Le pourboire à bien été ajouté !', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+}
   
   const titleRecap = listTitle()[2];
   const titleButton = listTitleButton()[2];
