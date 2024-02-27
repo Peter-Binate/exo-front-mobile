@@ -10,7 +10,10 @@ const Footer = ({ title, onNextButtonClick }) => {
   return (
     <div className="footer flex-center text-style position-fixed">
       <button className="next-button flex-center" onClick={handleNextButtonClick}>
-        <span className="flex-center">{title}<FaArrowRight className="arrow-icon" /></span>
+        <span className="flex-center">
+          {title}
+          <FaArrowRight className="arrow-icon" />
+        </span>
       </button>
     </div>
   );

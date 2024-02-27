@@ -14,7 +14,12 @@ body {
   color: #333; // Couleur de texte par défaut
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $base-font-family;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -36,15 +41,15 @@ p {
   margin-bottom: 1em;
 }
 
-.text-bold{
+.text-bold {
   font-weight: bold;
 }
 
-.uppercase-text{
+.uppercase-text {
   text-transform: uppercase;
 }
 
-.text-style{
+.text-style {
   font-size: 20px;
   font-weight: 700;
   font-family: $base-font-family;
