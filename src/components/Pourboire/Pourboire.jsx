@@ -43,12 +43,13 @@ const Pourboire = () => {
       <form>
         <div className="input-container">
           <label htmlFor="table-name">Nom de la table</label>
-          <input type="text" name="table-name" placeholder="Choisissez le nom de la table" />
+          <input type="text" id="table-name" name="table-name" placeholder="Choisissez le nom de la table" />
         </div>
         <div className="input-container">
           <label htmlFor="pourboire-mount">Montant du pourboire</label>
           <input
             type="text"
+            id="pourboire-mount"
             name="pourboire-mount"
             // Utilisez l'état pour contrôler la valeur de l'input
             value={pourboireAmount}
@@ -68,7 +69,10 @@ const Pourboire = () => {
           2.00
         </button>
       </div>
-      <Footer title={titleButton} onNextButtonClick={notify} />
+
+      <Footer title={titleButton} linkPath="/employee" onButtonClick={notify}>
+        {' '}
+      </Footer>
     </>
   );
 };

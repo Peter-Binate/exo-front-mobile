@@ -9,7 +9,6 @@
   text-align: center;
 }
 
-
 .toggle_switch {
   flex-direction: column;
   margin-top: 20%;
@@ -54,4 +53,14 @@
   width: 90%;
   height: 57px;
   border-bottom: 0.5px solid #b8b8b8;
+}
+
+.m10 {
+  margin: 10px 0;
+}
+
+.name-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
