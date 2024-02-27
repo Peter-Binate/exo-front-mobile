@@ -1,22 +1,22 @@
-@mixin section-width ($width: 100%) {
-    width: $width;
+@mixin section-width($width: 100%) {
+  width: $width;
 }
 
 @mixin flex-position($justify-content) {
-    display: flex;
-    justify-content: $justify-content;
+  display: flex;
+  justify-content: $justify-content;
 }
 
-@mixin margin($margin){
-    margin: $margin;
+@mixin margin($margin) {
+  margin: $margin;
 }
 
-@mixin screensize-mobile(){
-    @media screen and (max-width: 768px){
-        @content;
-    }
+@mixin screensize-mobile() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
-@mixin z-index($z-index: 0){
-    z-index: $z-index;
+@mixin z-index($z-index: 0) {
+  z-index: $z-index;
 }

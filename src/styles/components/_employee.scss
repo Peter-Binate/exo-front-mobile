@@ -1,0 +1,37 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/utilities';
+@import '../base/typography';
+@import '../components/services-recap';
+
+.employee-toggle {
+  margin-top: 10px;
+  width: 100%;
+
+  button {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-weight: bold;
+    font-style: 17px;
+  }
+}
+
+.employees-setting-container {
+  @include flex-position($justify-content: center);
+  width: 50%;
+  margin: 50px auto 0;
+  padding: 2px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.employee-icon {
+  margin: 0 10px;
+  font-size: 32px;
+}
+
+.employee-icon:hover {
+  color: $orange;
+}
