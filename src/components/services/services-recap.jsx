@@ -30,29 +30,26 @@ const HeaderRecap = () => {
 
   return (
     <>
-    <div className="header-in-scroll">
-      <Header title={titleRecap}/>
-      <Menus />
-    </div>
-    <p className='titleRecap'>Employés selectionnés</p>
-    
+      <div className="header-in-scroll">
+        <Header title={titleRecap}/>
+        <Menus />
+      </div>
+      <p className='titleRecap'>Employés selectionnés</p>
+      
 
-    <ul className="container-list flex-center">
-                {nameItems}
-            </ul>
-
-
-
-    <div className='toggle_switch flex-center'>
-      <p className='titleRecap'>Service</p>
-      <button onClick={handleToggle} className='buttonService flex-center'>
-        {isToggled ? <IoSunnyOutline className='buttonStyle' /> : <IoSunnyOutline className='buttonStyle hoverClick' />}
-        {isToggled ? <FaRegMoon className='buttonStyle hoverClick'/> : <FaRegMoon className='buttonStyle'/>}
-      </button>
-      {isToggled ? <p className='titleRecap' style={{color:"black"}}>soir</p> : <p className='titleRecap' style={{color:"black"}}>midi</p>}
-    </div>
-    <Footer title={titleButton}/>
-  </>
+      <ul className="container-list flex-center">
+        {nameItems}
+      </ul>
+      <div className='toggle_switch flex-center'>
+        <p className='titleRecap'>Service</p>
+        <button onClick={handleToggle} className='buttonService flex-center'>
+          {isToggled ? <IoSunnyOutline className='buttonStyle' /> : <IoSunnyOutline className='buttonStyle hoverClick' />}
+          {isToggled ? <FaRegMoon className='buttonStyle hoverClick'/> : <FaRegMoon className='buttonStyle'/>}
+        </button>
+        {isToggled ? <p className='titleRecap' style={{color:"black"}}>soir</p> : <p className='titleRecap' style={{color:"black"}}>midi</p>}
+      </div>
+      <Footer title={titleButton}/>
+    </>
   )
 }
 

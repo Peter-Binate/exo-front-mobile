@@ -43,11 +43,11 @@ const Pourboire = () => {
         <Header title={titleRecap}/>
       </div>
       <form>
-        <div className="pourboire-input-container">
+        <div className="input-container">
           <label htmlFor="table-name">Nom de la table</label>
           <input type="text" name="table-name" placeholder="Choisissez le nom de la table"/>
         </div>
-        <div className="pourboire-input-container">
+        <div className="input-container">
           <label htmlFor="pourboire-mount">Montant du pourboire</label>
           <input 
             type="text" 
