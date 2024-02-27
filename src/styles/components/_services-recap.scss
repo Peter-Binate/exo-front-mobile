@@ -1,17 +1,19 @@
-@import '../../styles/abstracts/variables'; 
+@import '../../styles/abstracts/variables';
 @import '../../styles/abstracts/mixins';
 
-.titleRecap{
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 10px;
-    color: $orange;
-    text-align: center;
+.titleRecap {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: $orange;
+  text-align: center;
 }
 
-.toggle_switch{
-flex-direction: column;
-.buttonService{
+
+.toggle_switch {
+  flex-direction: column;
+  margin-top: 20%;
+  .buttonService {
     @include flex-position($justify-content: space-between);
     width: 137px;
     height: 56px;
@@ -19,40 +21,37 @@ flex-direction: column;
     background-color: $orange-light;
     color: white;
     cursor: pointer;
-   
 
-    .buttonStyle{
-        width: 37%;
-        height: 5.5vh;
-        margin-left: 6px;
-        margin-right: 5px;
-        padding: 5px;
-        color: black;
-        
+    .buttonStyle {
+      width: 37%;
+      height: 5.5vh;
+      margin-left: 6px;
+      margin-right: 5px;
+      padding: 5px;
+      color: black;
     }
 
-    .hoverClick{
-        border-radius: 50%;
-        background-color: white;
-        padding: 5px;
-        color: $orange;
+    .hoverClick {
+      border-radius: 50%;
+      background-color: white;
+      padding: 5px;
+      color: $orange;
     }
+  }
 }
 
+.container-list {
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 29vh;
+  width: 43vh;
 }
 
-.container-list{
-    flex-direction: column;
-    overflow-y: auto;
-    max-height: 29vh;
-    width: 43vh;
-}
-
-.container-list-name{
-    display: flex;
-    justify-content: space-around;
-    z-index: 3;
-    width: 90%;
-    height: 57px;
-    border-bottom: 0.5px solid #B8B8B8;
+.container-list-name {
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  width: 90%;
+  height: 57px;
+  border-bottom: 0.5px solid #b8b8b8;
 }

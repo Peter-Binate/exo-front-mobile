@@ -1,22 +1,21 @@
-@import '../../styles/abstracts/variables'; 
+@import '../../styles/abstracts/variables';
 
 .menu {
-   font-size: 17px;
-   font-weight: 700;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  ul {
     display: flex;
-    ul {
-        display: flex;
-        justify-content: center;
+    justify-content: center;
 
-        li {
-            width: 84px;
-            text-align: center;
-            margin: 1vh;
-        }
-        li:hover{
-            background-color: $gray-color;
-            border-radius: 8px;
-        }
+    li {
+      width: 84px;
+      text-align: center;
+      margin: 1vh;
     }
-
+    li:hover {
+      background-color: $gray-color;
+      border-radius: 8px;
+    }
+  }
 }

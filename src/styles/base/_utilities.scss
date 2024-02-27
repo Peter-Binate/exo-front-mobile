@@ -2,43 +2,42 @@
 à plusieurs endroits dans le code pour appliquer des styles courants 
 ou des fonctionnalités spécifiques.*/
 
-
 // Classes utilitaires pour le positionnement
 .position-relative {
-    position: relative;
-  }  
-  
-  .position-absolute {
-    position: absolute;
-  }
-  
-  .header-in-scroll{
-    position: sticky;
-    z-index: 999;
-    top: 0;
-    background-color: #fff;
-  }
+  position: relative;
+}
 
-  .position-fixed {
-    position: fixed;
-  }
-  
-  // Classes utilitaires pour le centrage
-  .text-center {
-    text-align: center;
-  }
-  
-  .flex-start {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
+.position-absolute {
+  position: absolute;
+}
 
-  .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.header-in-scroll {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+// Classes utilitaires pour le centrage
+.text-center {
+  text-align: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   .input-container{
     @extend .flex-start;
@@ -52,28 +51,28 @@ ou des fonctionnalités spécifiques.*/
       color: #FF6B40;
     }
 
-    input{
-      font-family: Arial, sans-serif;
-      background-color: #F4F4F4;
-      border-radius: 4px;
-      width: 95%;
-      height: 50px;
-      margin-bottom: 10px;
-      padding-left: 10px;
-    }
+  input {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    width: 95%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
 
-    input::placeholder {
-      color: #C9C9C9;
-      font-size:  17px;
-    }
+  input::placeholder {
+    color: #c9c9c9;
+    font-size: 17px;
   }
-  
-  // Mixin pour la bordure arrondie
-  @mixin rounded-border($radius: 25px) {
-    border-radius: $radius;
-  }
-  
-  // Fonction pour générer des couleurs légèrement plus claires
-  @function lighten-color($color, $amount: 10%) {
-    @return lighten($color, $amount);
-  }
+}
+
+// Mixin pour la bordure arrondie
+@mixin rounded-border($radius: 25px) {
+  border-radius: $radius;
+}
+
+// Fonction pour générer des couleurs légèrement plus claires
+@function lighten-color($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}
