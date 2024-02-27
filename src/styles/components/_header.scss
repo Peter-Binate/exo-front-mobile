@@ -1,32 +1,128 @@
-@import '../../styles/abstracts/variables'; 
+@import '../../styles/abstracts/variables';
 @import '../../styles/abstracts/mixins';
-@import '../base/utilities'; 
+@import '../base/utilities';
 
-.header{
-    @include section-width;
-    padding-left: 18px;
+.header {
+  @include section-width;
+  padding-left: 18px;
 }
 
-h1{
-    width: 70%;
-    font-weight: 700;
+h1 {
+  width: 70%;
+  font-weight: 700;
 }
 
-.date{
-    color: $gray-text-color;
-    font-weight: 500;
+.date {
+  color: $gray-text-color;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 75px 0 0;
+  text-transform: capitalize;
+}
+
+.header-main-block {
+  @include flex-position($justify-content: space-between);
+}
+
+.burger-icon-container {
+  margin-right: 18px;
+}
+.burger-icon {
+  font-size: 44px;
+}
+
+.container-burger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 34vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
+
+  .burger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+
+    .cross-burger {
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    .burger-menu-list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 22vh;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      .service-burger {
+        border-bottom: 1px solid $gray-text-color;
+        left: 172px;
+        width: 233px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .footer-burger {
+      margin-top: 60vh;
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 10px;
+  height: 15vh;
+  width: 40vh;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 19.55px;
+  box-shadow: 0px 0px 12px 0px #00000017;
+
+  .button-modal {
+    padding: 5px;
+    margin-left: 25px;
     font-size: 17px;
-    margin: 75px 0 0;
-    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 17.5px;
+    color: #ff0000;
+    border: 1px solid;
+  }
+
+  .red-button {
+    background-color: rgba(255, 66, 34, 0.2);
+  }
 }
 
-.header-main-block{
-    @include flex-position($justify-content: space-between);
-}
-
-.burger-icon-container{
-     margin-right: 18px;
-}
-.burger-icon{
-     font-size: 44px;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Fond semi-transparent */
+  backdrop-filter: blur(4px);
+  z-index: 1000; /* Assurez-vous que le fond est derrière la modal */
 }

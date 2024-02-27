@@ -2,44 +2,77 @@
 à plusieurs endroits dans le code pour appliquer des styles courants 
 ou des fonctionnalités spécifiques.*/
 
-
 // Classes utilitaires pour le positionnement
 .position-relative {
-    position: relative;
-  }  
-  
-  .position-absolute {
-    position: absolute;
-  }
-  
-  .header-in-scroll{
-    position: sticky;
-    z-index: 999;
-    top: 0;
-    background-color: #fff;
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.header-in-scroll {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+// Classes utilitaires pour le centrage
+.text-center {
+  text-align: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  @extend .flex-start;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 90%;
+
+  label {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ff6b40;
   }
 
-  .position-fixed {
-    position: fixed;
+  input {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    width: 95%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 10px;
   }
-  
-  // Classes utilitaires pour le centrage
-  .text-center {
-    text-align: center;
+
+  input::placeholder {
+    color: #c9c9c9;
+    font-size: 17px;
   }
-  
-  .flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  // Mixin pour la bordure arrondie
-  @mixin rounded-border($radius: 4px) {
-    border-radius: $radius;
-  }
-  
-  // Fonction pour générer des couleurs légèrement plus claires
-  @function lighten-color($color, $amount: 10%) {
-    @return lighten($color, $amount);
-  }
+}
+
+// Mixin pour la bordure arrondie
+@mixin rounded-border($radius: 25px) {
+  border-radius: $radius;
+}
+
+// Fonction pour générer des couleurs légèrement plus claires
+@function lighten-color($color, $amount: 10%) {
+  @return lighten($color, $amount);
+}
