@@ -9,10 +9,11 @@ import { FaRegMoon } from 'react-icons/fa';
 import { listNames } from '../../datas/datas.js';
 import { FaRegUser } from 'react-icons/fa6';
 
-const HeaderRecap = () => {
+const ServiceRecap = () => {
   const [isToggled, setIsToggled] = useState(false);
   const titleRecap = listTitle()[1];
   const titleButton = listTitleButton()[1];
+
   const handleToggle = () => {
     setIsToggled(!isToggled);
   };
@@ -20,9 +21,9 @@ const HeaderRecap = () => {
   const nameItems = listNames().map((name, index) => (
     <li key={index} className={`container-list-name`}>
       <div className="icon-container text-center flex-center">
-        <FaRegUser className="user-icon" />
+        <FaRegUser className="user-icon m10" />
       </div>
-      <div className="name-container text-style flex-center">{name}</div>
+      <div className="name-container text-style">{name}</div>
     </li>
   ));
 
@@ -52,10 +53,9 @@ const HeaderRecap = () => {
           </p>
         )}
       </div>
-      <Footer title={titleButton} />
+      <Footer title={titleButton} linkPath="/pourboire" />
     </>
   );
 };
 
-
-export default HeaderRecap;
+export default ServiceRecap;

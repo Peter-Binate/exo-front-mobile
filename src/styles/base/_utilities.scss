@@ -39,17 +39,17 @@ ou des fonctionnalités spécifiques.*/
   align-items: center;
 }
 
-  .input-container{
-    @extend .flex-start;
-    margin: 0 auto;
-    flex-direction: column;
-    width: 90%;
+.input-container {
+  @extend .flex-start;
+  margin: 0 auto;
+  flex-direction: column;
+  width: 90%;
 
-    label {
-      font-size: 17px;
-      font-weight: 700;
-      color: #FF6B40;
-    }
+  label {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ff6b40;
+  }
 
   input {
     font-family: Arial, sans-serif;

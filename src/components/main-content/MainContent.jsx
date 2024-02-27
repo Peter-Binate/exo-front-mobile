@@ -7,7 +7,7 @@ import Header from '../../layouts/Header/Header.jsx';
 import Menu from '../menu/menu.jsx';
 import Footer from '../../layouts/Footer/Footer.jsx';
 
-const MainContent = ({ toggleView }) => {
+const MainContent = () => {
   const titleRecap = listTitle()[0];
   const titleButton = listTitleButton()[0];
 
@@ -33,17 +33,6 @@ const MainContent = ({ toggleView }) => {
     </li>
   ));
 
-  // Fonction pour vérifier si au moins un élément a été coché
-  const handleNextButtonClick = () => {
-    const isAtLeastOneChecked = Object.values(checkedItems).some((item) => item);
-    if (isAtLeastOneChecked) {
-      toggleView(); // Appeler la fonction pour basculer vers le ServiceRecap
-    } else {
-      // Gérer le cas où aucun élément n'est coché
-      console.log('Aucun élément coché');
-    }
-  };
-
   return (
     <>
       <div className="header-in-scroll">
@@ -53,7 +42,7 @@ const MainContent = ({ toggleView }) => {
 
       <ul className="main-section flex-center">{nameItems}</ul>
 
-      <Footer title={titleButton} onNextButtonClick={handleNextButtonClick} />
+      <Footer title={titleButton} linkPath="/serviceRecap" />
     </>
   );
 };

@@ -1,4 +1,3 @@
-
 // Réinitialisation des styles spécifiques aux navigateurs
 
 // Réinitialisation des marges et paddings à zéro pour tous les éléments
@@ -50,10 +49,7 @@ button {
 }
 
 /* Réinitialisation du style par défaut de l'input text */
- input[type="text"] {
-   border: none;            /* Supprime la bordure */
-   outline: none;           /* Supprime la mise en surbrillance lors du focus */
-  }
-
-  
-
+input[type='text'] {
+  border: none; /* Supprime la bordure */
+  outline: none; /* Supprime la mise en surbrillance lors du focus */
+}
